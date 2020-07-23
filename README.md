@@ -1,6 +1,6 @@
 # Classifying lyrics using Naive Bayes
 
-Bike sharing demand
+Classifying song lyrics
 ---------------------------
 This project classifies song lyrics scraped from the web as belonging to a particular artist. The concept is based on a bag of words model, i.e. any artist will likely have particular words they frequently use, by which the model can identify them.
 
@@ -15,7 +15,7 @@ I build a simple machine learning model using Naive-Bayes and logistic regressio
 1. Lyrics_classification_part1.ipynb
     - follow the concept behind bag of words put to practice
 2. Lyrics_classification_part2.ipynb
-    - follow the creation of several pipelines to compare performance of different sampling techniques
+    - follow the creation of several pipelines to compare performance of different models and sampling techniques
 
 View the analyses directly by clicking the jupyter notebook files in the GitHub repository!
   - GitHub renders the files for immediate viewing
@@ -52,11 +52,11 @@ Key takeaways
 
 - Bag of words leads to very large dimensions of several thousand feature (transformed relative word count) columns
 - __Figure 1__ shows the confusion matrix for classifying songs as belonging to either Bob Dylan or Jay Z using Naive Bayes without oversampling. The training data contains 454 Bob-Dylan songs and 349 Jay-Z songs.
-  - As we can see, only few test samples are misclassified
-- __Figure 2__ shows the confuson matrix for 4 different artists using Naive-Bayes without oversampling underrepresented classes. The training data is enhanced with 97 Whitney Houston samples and 89 Lady Gaga sample.  
+  - Only few test samples are misclassified
+- __Figure 2__ shows the confuson matrix for 4 different artists using Naive-Bayes without oversampling underrepresented classes. The training data is enhanced with 97 Whitney Houston samples and 89 Lady Gaga samples.  
   - Naives Bayes fails to classify the underrepresented artists
 - __Figure 3__ shows the confusion matrix for the same 4 artists using Naive-Bayes and random oversampling, which oversamples the underrepresented classes to obtain 454 training samples for each artist
-  - Naive Bayes with random oversampling does a better job at classifying the underrepresented classes, although precision and recall scores are still worse
+  - Naive Bayes with random oversampling does a better job at classifying the underrepresented classes, although precision and recall scores are still worse for such classes
 - SMOTE is an oversampling technique which creates new data points based on k nearest neighbours. SMOTE performs better than random oversampling, in particular for a larger number of artists
 - Logistic Regression achieves a comparable outcome using balanced class weights as a parameter
 
