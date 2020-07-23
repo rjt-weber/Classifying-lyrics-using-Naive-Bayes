@@ -51,9 +51,9 @@ Key takeaways
 -----------------------
 
 - Bag of words leads to very large dimensions of several thousand feature (transformed relative word count) columns
-- __Figure 1__ shows the confusion matrix for classifying songs as belonging to either Bob Dylan or Jay Z using Naive Bayes without oversampling. The training data contains 454 Bob-Dylan songs and 349 Jay-Z songs.
+- __Figure 1__ shows the confusion matrix for classifying songs as belonging to either Bob Dylan or Jay Z using Naive Bayes without oversampling. The training data contains 454 Bob-Dylan songs and 349 Jay-Z songs
   - Only few test samples are misclassified
-- __Figure 2__ shows the confuson matrix for 4 different artists using Naive-Bayes without oversampling underrepresented classes. The training data is enhanced with 97 Whitney Houston samples and 89 Lady Gaga samples.  
+- __Figure 2__ shows the confuson matrix for 4 different artists using Naive-Bayes without oversampling underrepresented classes. The training data is enhanced with 97 Whitney Houston samples and 89 Lady Gaga samples
   - Naives Bayes fails to classify the underrepresented artists
 - __Figure 3__ shows the confusion matrix for the same 4 artists using Naive-Bayes and random oversampling, which oversamples the underrepresented classes to obtain 454 training samples for each artist
   - Naive Bayes with random oversampling does a better job at classifying the underrepresented classes, although precision and recall scores are still worse for such classes
